@@ -4,7 +4,7 @@ import (
     "log"
 
     "github.com/gofiber/fiber/v3"
-    "github.com/gofiber/fiber/v2/middleware/cors"
+    "github.com/gofiber/fiber/v3/middleware/cors"
 )
 
 func main() {
@@ -22,6 +22,5 @@ func main() {
         return c.SendString("Hello, World 👋!")
     })
 
-    // Start the server on port 3000
     log.Fatal(app.Listen(":8000"))
 }
